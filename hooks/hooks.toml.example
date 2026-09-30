@@ -1,0 +1,18 @@
+# Generated hook block
+#
+# `python -m skill_gate install` merges a managed block equivalent to the one
+# below into the selected Codex config.toml. The installer is preferred because
+# it also builds the index, creates backups, and supports clean uninstall.
+#
+# BEGIN CODEX SKILL GATE
+# [skills]
+# include_instructions = false
+#
+# [[hooks.UserPromptSubmit]]
+# matcher = ""
+# [[hooks.UserPromptSubmit.hooks]]
+# type = "command"
+# command = "python3 /path/to/skill-gate/runtime/run_hook.py"
+# commandWindows = "\"C:\\Python313\\python.exe\" \"C:\\path\\to\\skill-gate\\runtime\\run_hook.py\""
+# timeoutSec = 5
+# END CODEX SKILL GATE

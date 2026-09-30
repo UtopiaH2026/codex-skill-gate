@@ -1,0 +1,40 @@
+{"text":"Fix the Python bug in this function","mode":"coding"}
+{"text":"Review this pull request and point out correctness issues","mode":"coding"}
+{"text":"Add a unit test for the retry logic","mode":"coding"}
+{"text":"Refactor this TypeScript React component","mode":"coding"}
+{"text":"Explain this stack trace and tell me where the null pointer comes from","mode":"coding"}
+{"text":"Build a FastAPI endpoint for creating users","mode":"coding"}
+{"text":"Optimize this SQL query and add an index","mode":"coding"}
+{"text":"Configure Docker Compose for the backend and Postgres","mode":"coding"}
+{"text":"Help me finish this git rebase","mode":"coding"}
+{"text":"There is a panic in my Rust code","mode":"coding"}
+{"text":"Implement a Go function that streams records","mode":"coding"}
+{"text":"Why is pytest failing in tests/test_api.py?","mode":"coding"}
+{"text":"Fix the package.json dependency conflict","mode":"coding"}
+{"text":"Write a database migration for the new column","mode":"coding"}
+{"text":"Upgrade this repository to the latest TypeScript version","mode":"coding"}
+{"text":"Write a PowerShell script to rotate logs","mode":"coding"}
+{"text":"调试这个 Python 脚本的报错","mode":"coding"}
+{"text":"帮我重构这段 JavaScript 代码","mode":"coding"}
+{"text":"给这个接口补一组单元测试","mode":"coding"}
+{"text":"修复 package.json 里的依赖冲突","mode":"coding"}
+{"text":"写一篇关于秋天的散文","mode":"non_coding"}
+{"text":"帮我总结这本书的第三章","mode":"non_coding"}
+{"text":"草拟一封给供应商的邮件","mode":"non_coding"}
+{"text":"帮我规划孩子的生日派对","mode":"non_coding"}
+{"text":"把这段介绍翻译成法语","mode":"non_coding"}
+{"text":"改写我的个人简历","mode":"non_coding"}
+{"text":"头脑风暴一个咖啡品牌的营销活动","mode":"non_coding"}
+{"text":"列一个十页的摄影课程大纲","mode":"non_coding"}
+{"text":"比较两家餐厅的菜单和价格","mode":"non_coding"}
+{"text":"解释工业革命对城市化的影响","mode":"non_coding"}
+{"text":"整理这次会议的纪要","mode":"non_coding"}
+{"text":"写一首关于月亮的短诗","mode":"non_coding"}
+{"text":"制定三天的杭州旅行计划","mode":"non_coding"}
+{"text":"比较两种医疗保险方案","mode":"non_coding"}
+{"text":"帮我做一个家庭月度预算","mode":"non_coding"}
+{"text":"根据这篇文章写一篇摘要","mode":"non_coding"}
+{"text":"设计一张音乐节海报的文案","mode":"non_coding"}
+{"text":"写一份产品需求说明的初稿","mode":"non_coding"}
+{"text":"给团队写一份季度复盘报告","mode":"non_coding"}
+{"text":"解释这段历史事件的背景","mode":"non_coding"}

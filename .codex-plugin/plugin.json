@@ -1,0 +1,29 @@
+{
+  "name": "codex-skill-gate",
+  "version": "0.1.0",
+  "description": "Binary coding/non-coding gate that keeps Codex skill metadata out of non-coding sessions.",
+  "author": {
+    "name": "LiangZai"
+  },
+  "license": "MIT",
+  "keywords": [
+    "codex",
+    "skills",
+    "hooks",
+    "context-management",
+    "lazy-loading"
+  ],
+  "interface": {
+    "displayName": "Codex Skill Gate",
+    "shortDescription": "Zero skill metadata until a coding session is detected",
+    "longDescription": "Codex Skill Gate disables the built-in skill catalog by default, classifies each session as coding or non-coding, and re-injects a compact skill catalog only when the session is coding.",
+    "developerName": "LiangZai",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": "Install Codex Skill Gate and show me how to verify it."
+  }
+}

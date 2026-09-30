@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codex-skill-gate"
+version = "0.1.0"
+description = "Binary coding/non-coding gate for Codex skill metadata."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "LiangZai" }]
+keywords = ["codex", "skills", "context-management", "hooks", "lazy-loading"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Software Development :: Libraries",
+]
+
+[project.scripts]
+skill-gate = "skill_gate.cli:main"
+
+[tool.setuptools]
+packages = ["skill_gate"]
