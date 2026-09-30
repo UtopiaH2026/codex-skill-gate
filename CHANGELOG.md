@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.1.0 - 2026-09-30
+## v0.1 - 2026-09-30
 
 - Initial binary coding/non-coding classifier.
 - Sticky per-session coding state.

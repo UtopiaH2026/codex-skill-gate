@@ -1,3 +1,4 @@
+[![Version](https://img.shields.io/badge/version-v0.1-blue.svg)](https://github.com/UtopiaH2026/codex-skill-gate/releases/tag/v0.1)
 [![CI](https://github.com/UtopiaH2026/codex-skill-gate/actions/workflows/ci.yml/badge.svg)](https://github.com/UtopiaH2026/codex-skill-gate/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
@@ -223,4 +224,3 @@ Plugin validation is performed with Codex's plugin validator when available.
 ## License
 
 MIT
-
