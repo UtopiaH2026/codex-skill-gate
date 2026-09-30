@@ -28,3 +28,8 @@ skill-gate = "skill_gate.cli:main"
 
 [tool.setuptools]
 packages = ["skill_gate"]
+
+[project.urls]
+Homepage = "https://github.com/UtopiaH2026/codex-skill-gate"
+Repository = "https://github.com/UtopiaH2026/codex-skill-gate"
+Issues = "https://github.com/UtopiaH2026/codex-skill-gate/issues"

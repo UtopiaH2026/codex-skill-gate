@@ -1,3 +1,6 @@
+[![CI](https://github.com/UtopiaH2026/codex-skill-gate/actions/workflows/ci.yml/badge.svg)](https://github.com/UtopiaH2026/codex-skill-gate/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 # Codex Skill Gate
 
 **The first public binary gate for Codex skill metadata: coding sessions get the catalog, everything else gets zero skill metadata.**
@@ -220,5 +223,4 @@ Plugin validation is performed with Codex's plugin validator when available.
 ## License
 
 MIT
-
 

@@ -25,5 +25,7 @@
       "Write"
     ],
     "defaultPrompt": "Install Codex Skill Gate and show me how to verify it."
-  }
+  },
+  "homepage": "https://github.com/UtopiaH2026/codex-skill-gate",
+  "repository": "https://github.com/UtopiaH2026/codex-skill-gate"
 }

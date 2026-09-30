@@ -10,6 +10,11 @@ import urllib.error
 import urllib.request
 from pathlib import Path
 
+try:
+    import winreg
+except ImportError:  # pragma: no cover - non-Windows
+    winreg = None
+
 API = "https://api.github.com"
 
 
@@ -41,6 +46,34 @@ def credential_from_git() -> str | None:
             key, value = line.split("=", 1)
             values[key] = value
     return values.get("password")
+
+
+def system_proxy() -> str | None:
+    for name in ("HTTPS_PROXY", "https_proxy", "HTTP_PROXY", "http_proxy", "ALL_PROXY", "all_proxy"):
+        value = os.environ.get(name)
+        if value:
+            return value
+    if winreg is None:
+        return None
+    try:
+        key = winreg.OpenKey(
+            winreg.HKEY_CURRENT_USER,
+            r"Software\Microsoft\Windows\CurrentVersion\Internet Settings",
+        )
+        enabled, _ = winreg.QueryValueEx(key, "ProxyEnable")
+        server, _ = winreg.QueryValueEx(key, "ProxyServer")
+    except OSError:
+        return None
+    if not enabled or not server:
+        return None
+    if "=" in str(server):
+        for part in str(server).split(";"):
+            if part.lower().startswith("https="):
+                return part.split("=", 1)[1]
+        for part in str(server).split(";"):
+            if part.lower().startswith("http="):
+                return part.split("=", 1)[1]
+    return str(server)
 
 
 def request_json(method: str, url: str, token: str, payload: dict[str, object] | None = None) -> dict[str, object]:
@@ -122,6 +155,11 @@ def main() -> int:
         run_git("-C", str(repo_root), "remote", "add", "origin", remote)
 
     push_command = ["git", "-C", str(repo_root)]
+    proxy = system_proxy()
+    if proxy:
+        if "://" not in proxy:
+            proxy = f"http://{proxy}"
+        push_command.extend(["-c", f"http.proxy={proxy}", "-c", f"https.proxy={proxy}"])
     if token_source == "environment":
         basic = base64.b64encode(f"x-access-token:{token}".encode("utf-8")).decode("ascii")
         push_command.extend(["-c", f"http.extraHeader=Authorization: Basic {basic}"])
